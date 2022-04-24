@@ -1,0 +1,84 @@
+create table Certificaciones (
+	Id int NOT NULL AUTO_INCREMENT,
+	Nombre varchar(75) NOT NULL,
+	UrlCertificacion varchar (250),
+	Fecha varchar (10) NOT NULL,
+	PRIMARY KEY (Id)
+);
+
+
+create table Tecnologias (
+	Id int NOT NULL AUTO_INCREMENT,
+	Nombre varchar(75) NOT NULL,
+    	NombreIcono varchar (50) NOT NULL,
+	PRIMARY KEY (Id)
+);
+
+create table Companias (
+	Id int NOT NULL AUTO_INCREMENT,
+	Nombre varchar(75) NOT NULL,
+ 	UrlIcono varchar (250) NOT NULL,
+	PRIMARY KEY (Id)
+);
+
+create table Proyectos (
+	Id int NOT NULL AUTO_INCREMENT,
+	Nombre varchar(75) NOT NULL,
+    	UrlImagen varchar (250) NOT NULL,
+	UrlGithub varchar (250),
+	UrlProyecto varchar (250),
+    	Fecha varchar (10) NOT NULL,
+	PRIMARY KEY (Id)
+);
+
+create table Usuario (
+	Id varchar(75) NOT NULL,
+	Contrasenia varchar(250) NOT NULL,
+	PRIMARY KEY (Id)
+);
+
+create table tecn_certif (
+	Id INT NOT NULL AUTO_INCREMENT,
+	Id_tecnologia INT NOT NULL,
+    Id_certificado INT NOT NULL,
+	FOREIGN KEY (Id_tecnologia) REFERENCES tecnologias(Id),
+    FOREIGN KEY (Id_certificado) REFERENCES certificaciones(Id),
+    PRIMARY KEY (Id)
+);
+
+create table tecn_proyect (
+	Id INT NOT NULL AUTO_INCREMENT,
+	Id_tecnologia INT NOT NULL,
+    Id_proyecto INT NOT NULL,
+	FOREIGN KEY (Id_tecnologia) REFERENCES tecnologias(Id),
+    FOREIGN KEY (Id_proyecto) REFERENCES proyectos(Id),
+    PRIMARY KEY (Id)
+);
+
+create table compa_certif (
+	Id INT NOT NULL AUTO_INCREMENT,
+	Id_compania INT NOT NULL,
+    Id_certificacion INT NOT NULL,
+	FOREIGN KEY (Id_compania) REFERENCES companias(Id),
+    FOREIGN KEY (Id_certificacion) REFERENCES certificaciones(Id),
+    PRIMARY KEY (Id)
+);
+
+create table compa_proyect (
+	Id INT NOT NULL AUTO_INCREMENT,
+	Id_compania INT NOT NULL,
+    Id_proyecto INT NOT NULL,
+	FOREIGN KEY (Id_compania) REFERENCES companias(Id),
+    FOREIGN KEY (Id_proyecto) REFERENCES proyectos(Id),
+    PRIMARY KEY (Id)
+);
+
+create table compa_tecn (
+	Id INT NOT NULL AUTO_INCREMENT,
+	Id_compania INT NOT NULL,
+    Id_tecnologia INT NOT NULL,
+	FOREIGN KEY (Id_compania) REFERENCES companias(Id),
+    FOREIGN KEY (Id_tecnologia) REFERENCES tecnologias(Id),
+    PRIMARY KEY (Id)
+);
+
