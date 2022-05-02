@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import CarouselImg from '../components/Carousel/CarouselImg/CarouselImg';
 import technology from '../technology';
 
-import createValue from '../components/Carousel/CarouselImg/createValue';
+
 import CarouselList from '../components/Carousel/CarouselList/CarouselList';
 
 
@@ -15,41 +15,68 @@ const Technology = () => {
     const [pointer, setPointer] = useState(0);
     const [value, setValue] = useState({});
 
+    const [projectJSON, setProjectJSON] = useState([])
+    const [loading, setLoading] = useState(true);
+
+
     const pointBack = () => {
       
-        (pointer > 0)?setPointer(pointer - 1):setPointer(technology.length - 1);
+        (pointer > 0)?setPointer(pointer - 1):setPointer(projectJSON.length - 1);
         
     }
 
     const pointUp = () => {
-    (pointer < (technology.length - 1 ))? setPointer(pointer  + 1):setPointer(0);
+    (pointer < (projectJSON.length - 1 ))? setPointer(pointer  + 1):setPointer(0);
     }
 
+    const obtenerDatos = async ()  => {
+        const response = await fetch(`http://localhost:9000/api/technology/`);
+        const json = await response.json();
+        let { datos } = json;
+        setProjectJSON(datos);
+        setLoading(false);
+
+    }
+
+   
+  
+    
     useEffect(() => {
-        let objtValue = createValue(technology, pointer);
-        setValue(objtValue);
-    }, [pointer]);
+        obtenerDatos();
+    }, []);
+
+    console.log(projectJSON);
     
+   
 
+    if (loading) {
+        return (
+            <div className='projects'>
+                <h1>Cargando...</h1>
+            </div>
+        );
+    }else {
+        return (
+            <div className='tecnologia'>
+                <h1 className='tecnologia-title'>Tecnologia</h1>
+        
+            <section className='tecnologia-carousel'>
+            
+                <FontAwesomeIcon className='tecnologia-carousel--arrow'  onClick={pointBack} icon={faAngleDoubleLeft}/>
+                        <CarouselImg value={projectJSON[pointer]} />
+                <FontAwesomeIcon className='tecnologia-carousel--arrow' onClick={pointUp} icon={faAngleDoubleRight}/>
+              
+            </section>
+               
+        
+                    <CarouselList pointer = {pointer}/>
+             
+        
+            </div>
+          )
+    }
 
-  return (
-    <div className='tecnologia'>
-        <h1 className='tecnologia-title'>Tecnologia</h1>
-
-    <section className='tecnologia-carousel'>
-    
-        <FontAwesomeIcon className='tecnologia-carousel--arrow'  onClick={pointBack} icon={faAngleDoubleLeft}/>
-                <CarouselImg value={value} />
-        <FontAwesomeIcon className='tecnologia-carousel--arrow' onClick={pointUp} icon={faAngleDoubleRight}/>
-      
-    </section>
-       
-
-            <CarouselList pointer = {pointer}/>
-     
-
-    </div>
-  )
+ 
 }
 
 export default Technology

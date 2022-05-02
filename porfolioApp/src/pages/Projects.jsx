@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import CarouselImg from '../components/Carousel/CarouselImg/CarouselImg';
-import createValue from '../components/Carousel/CarouselImg/createValue';
+
 
 
 import './Projects.css';
@@ -28,14 +28,12 @@ const Projects = () => {
         if (projectJSON.length > 3) {
             return projectJSON.map((e, i) => {
                 if (i < pointer) {
-                    let objtValue = createValue(projectJSON, i);
-                    return <CarouselImg value={objtValue} />;
+                    return <CarouselImg value={projectJSON[i]} />;
                 }
             })
         } else {
             return projectJSON.map((e, i) => {
-                let objtValue = createValue(projectJSON, i);
-                return <CarouselImg value={objtValue} />;
+                return <CarouselImg value={projectJSON[i]} />;
             })
         }
     }
@@ -97,9 +95,14 @@ const Projects = () => {
                                 : null
                         }
     
-                        <button className='btn' onClick={pointBack}>
-                            Less
-                        </button>
+                        {
+                            (pointer <= 3 ) ? null
+                           :  <button className='btn' onClick={pointBack}>
+                           Less
+                           </button> 
+                        }
+
+                       
                     </div>
     
     

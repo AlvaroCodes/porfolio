@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { NavLink } from "react-router-dom";
+
 import './NavBar.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -28,9 +30,9 @@ export const NavBar = () => {
                     <FontAwesomeIcon className='navBar__burger' onClick={ displayNav} icon={faBars} />
                 </div>
                 <nav className='navBar__nav'>
-                    <a href="#" className='navBar__nav__link'>Home</a>
-                    <a href="#" className='navBar__nav__link'>About</a>
-                    <a href="#" className='navBar__nav__link'>Contact</a>
+                    <NavLink to="/" className={({isActive}) => 'navBar__nav__link '+ ( isActive ? 'active' : '' )}>Home</NavLink>
+                    <NavLink to="/About" className={({isActive}) => 'navBar__nav__link '+ ( isActive ? 'active' : '' )}>About</NavLink>
+                    <NavLink to="/Contact" className={({isActive}) => 'navBar__nav__link '+ ( isActive ? 'active' : '' )}>Contact</NavLink>
                     <a href="#" className='navBar__nav__link navBar__nav__link-cv'>
                         <FontAwesomeIcon className='navBar_nav_link-cv_svg' icon={faFileArrowDown} />
                         <p>CV</p>

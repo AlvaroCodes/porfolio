@@ -12,6 +12,8 @@
 
     margin: 0 auto;
     padding: 30px 0;
+
+    
 }
 
 .about__sections-title{
@@ -22,12 +24,15 @@
 .about__sections img {
     margin-top: 10px;
     width: 400px;
-    filter: grayscale(90%);
+    filter: grayscale(10%);
+
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(255, 255, 255, 0);
 }
 
 .about__sections img:hover{
     cursor: pointer;
-    filter: grayscale(10%);
+    filter: grayscale(90%);
 }
 
 .hr {
@@ -37,4 +42,8 @@
     width: 200px;
     margin: 4px 0;
     border: #98AC20 1px solid;
+}
+
+.about__sections-link{
+    text-decoration: none;
 }

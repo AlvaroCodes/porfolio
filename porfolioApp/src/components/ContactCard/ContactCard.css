@@ -1,0 +1,22 @@
+.contactCard {
+
+
+    margin: 10px;
+
+    font-size: 60px;
+    text-align: center;
+    padding: 90px 110px;
+    
+    color: rgb(255, 255, 255);
+
+    background-color: #2C2B2B;
+    border-radius: 5px;
+
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+} 
+
+.contactCard:hover{
+    color: #98AC20;
+    background-color: #252525;
+}

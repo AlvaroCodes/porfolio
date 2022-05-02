@@ -7,7 +7,7 @@ import {faLink} from '@fortawesome/free-solid-svg-icons'
 
 const CarouselImg = ({value}) => {
 
-    // console.log(value.subText);
+     console.log(value);
 
     let content;
 
@@ -38,7 +38,7 @@ const CarouselImg = ({value}) => {
         
             <img 
             className='tecnologia-header--logo'
-            src={value.imgTechnology} alt="" />
+            src={value.imgTechnology} alt="prueba" />
         </div>
     }
 

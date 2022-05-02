@@ -1,7 +1,13 @@
 import './App.css';
+import { BrowserRouter } from "react-router-dom";
+
+
+import Footer from './components/Footer/Footer';
 
 import { NavBar } from './components/NavBar/NavBar';
-import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import AppRouter from './routers/AppRouter';
+// import Projects from './pages/Projects';
 // import Technology from './pages/Technology';
 
 
@@ -9,14 +15,21 @@ import Projects from './pages/Projects';
 function App() {
 
   return (
-    <div className="App">
+   
+      // <div className="App">
 
-     <NavBar/>
+      // <NavBar/>
 
-    <Projects/>
-    {/* <Technology/> */}
+      // {/* <Projects/> */}
+      // {/* <Technology/> */}
 
-    </div>
+      // <Contact/>
+
+      // <Footer/>
+      // </div>
+
+      <AppRouter/>
+ 
   );
 }
 

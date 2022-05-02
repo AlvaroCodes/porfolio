@@ -6,10 +6,10 @@ const CarouselList = ({pointer = 0}) => {
   return (
     <div className='tecnologia__list'>
         {
-        technology[pointer].certifications.map( e => {
+        technology[pointer].certifications.map( (e, i) => {
             return (
                
-                <div className='tecnologia__list-elemnt'>
+                <div key={i} className='tecnologia__list-elemnt'>
                     <img  className='tecnologia__list-img' src={e.iconCompany} alt="" />
                     <a className='tecnologia__list-title' href={e.url}>{e.nameCertifications}</a>
                 </div>
