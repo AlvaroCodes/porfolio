@@ -1,5 +1,6 @@
 import  express  from "express";
 import config from './config'
+import router from './router';
 
 let _server;
 
@@ -8,6 +9,14 @@ const server = {
         const app = express();
 
         config(app);
+        router(app);
+
+        // Rutas
+        app.get('/', (req, res, next) => {
+            res
+                .status(200)
+                .json({data: 'metodo post'})
+        })
 
         _server = app.listen('9000', ()=> {
             if(process.env.NODE_ENV !== 'test'){

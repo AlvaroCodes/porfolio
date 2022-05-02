@@ -1,0 +1,41 @@
+{
+    "datos":
+    [
+        {
+            "name": "Proyect1", 
+            "imgTechnology": "./assets/projects.png",
+            "subText": "Proyecto sobre, ... ",
+            "urlGit": "https://github.com/AlvaroCodes/porfolio",
+            "urlWeb": "https://www.youtube.com/"
+        },
+        {
+            "name": "Proyect2", 
+            "imgTechnology": "./assets/projects.png",
+            "subText": "Proyecto sobre, ... ",
+            "urlGit": "https://github.com/AlvaroCodes/porfolio",
+            "urlWeb": "https://www.youtube.com/"
+        },
+        {
+            "name": "Proyect3", 
+            "imgTechnology": "./assets/projects.png",
+            "subText": "Proyecto sobre, ... ",
+            "urlGit": "https://github.com/AlvaroCodes/porfolio",
+            "urlWeb": "https://www.youtube.com/"
+        },
+        {
+            "name": "Proyect4", 
+            "imgTechnology": "./assets/projects.png",
+            "subText": "Proyecto sobre, ... ",
+            "urlGit": "https://github.com/AlvaroCodes/porfolio",
+            "urlWeb": "https://www.youtube.com/"
+        },
+        {
+            "name": "Proyect5", 
+            "imgTechnology": "./assets/projects.png",
+            "subText": "Proyecto sobre, ... ",
+            "urlGit": "https://github.com/AlvaroCodes/porfolio",
+            "urlWeb": "https://www.youtube.com/"
+        }
+    ]
+}
+
