@@ -1,6 +1,10 @@
 import React from 'react'
 import './CarouselImg.css'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faGithub} from '@fortawesome/free-brands-svg-icons'
+import {faLink} from '@fortawesome/free-solid-svg-icons'
+
 const CarouselImg = ({value}) => {
 
     // console.log(value.subText);
@@ -9,12 +13,24 @@ const CarouselImg = ({value}) => {
 
     if (value.subText){
         
-        content = <div>
-                    <p>{value.name}</p>
-                    <p>{value.subText}</p>
-                    <img className='carouselImg-img' src={value.imgTechnology} alt="" />
-                    <button>GitHub</button>
-                    <button>Web</button>
+        content = <div className='project'>
+                    <h2 className='project-title'>{value.name}</h2>
+                    <p className='project-subText'>{value.subText}</p>
+                    <img className='project-img' src={value.imgTechnology} alt="" />
+                
+                    <div className='project-links'>
+                        <a 
+                        className='project-link' 
+                        href={value.urlGit}>
+                            <FontAwesomeIcon icon={faGithub}/>
+                        </a>
+                        <a 
+                        className='project-link'
+                        href={value.urlWeb}>
+                            <FontAwesomeIcon icon={faLink}/>
+                        </a>
+                    </div>
+                
                   </div>;
     }else {
         content = <div className='tecnologia-header'>
