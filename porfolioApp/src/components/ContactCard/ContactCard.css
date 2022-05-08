@@ -19,4 +19,5 @@
 .contactCard:hover{
     color: #98AC20;
     background-color: #252525;
+    transition: 0.5s;
 }

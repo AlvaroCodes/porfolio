@@ -58,7 +58,7 @@ const Technology = () => {
     }else {
         return (
             <div className='tecnologia'>
-                <h1 className='tecnologia-title'>Tecnologia</h1>
+                <h1 className='tecnologia-title'>Technology</h1>
         
             <section className='tecnologia-carousel'>
             

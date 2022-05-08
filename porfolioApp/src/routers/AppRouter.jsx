@@ -1,6 +1,5 @@
 import React from 'react'
 import {BrowserRouter, Routes,Route,} from "react-router-dom";
-import Footer from '../components/Footer/Footer';
 import { NavBar } from '../components/NavBar/NavBar';
 import { About } from '../pages/About/About';
 
@@ -24,8 +23,6 @@ const AppRouter = () => {
           <Route path="/Technology" element={<Technology/>} />
       </Routes>
       </BrowserRouter>
-
-        <Footer/>
     </div>
   )
 }

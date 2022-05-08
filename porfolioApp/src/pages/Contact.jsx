@@ -10,9 +10,11 @@ const Contact = () => {
     <div className='contact'>
         <h1 className='contact-title'>Contact</h1>
 
-        <ContactCard nameIcon={faInstagram} url={'https://www.instagram.com/alvaro_codes/'}/>
-        <ContactCard nameIcon={faEnvelope} url={'https://www.instagram.com/alvaro_codes/'}/>
-        <ContactCard nameIcon={faLinkedin} url={'https://www.instagram.com/alvaro_codes/'}/>
+      <div className='contact-cards'>
+        <ContactCard  nameIcon={faInstagram} url={'https://www.instagram.com/alvaro_codes/'}/>
+        <ContactCard  nameIcon={faEnvelope} url={'mailto: aramirezdeveloper@gmail.com'}/>
+        <ContactCard  nameIcon={faLinkedin} url={'https://www.linkedin.com/in/%C3%A1lvaro-ram%C3%ADrez-mart%C3%ADnez-51b674215/'}/>
+        </div>
     </div>
   )
 }

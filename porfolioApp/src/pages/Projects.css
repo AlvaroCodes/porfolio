@@ -1,5 +1,4 @@
 .projects {
-
     width: 100%;
     background-color: #1A1919;
 
@@ -9,31 +8,37 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 
     padding-bottom: 20px;
 }
 
 .projects-title {
-    margin: 20px;
+    margin: 30px 0 0 0;
+    text-align: center;
 }
 
 .carrousel-projects {
-    width: 100%;
-    margin: 0 auto;
+    width: 700px;
+    max-width: 90%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex-direction: column;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  
+   margin: 30px;
 }
+
+
 
 .project {
 
     margin:  10px;
 
     width: 90%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,10 +59,11 @@
 .project-title {
     color: #98AC20;
     margin: 10px;
+    font-size: 2em;
 }
 
 .project-subText{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 } 
 
 .project-links{
