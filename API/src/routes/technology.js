@@ -1,4 +1,5 @@
 import express from "express";
+import { createTechnology } from "../controllers/techo";
 
 const router = express.Router();
 
@@ -9,5 +10,8 @@ router.get('/', (req, res, next) => {
         .status(200)
         .json(jsonDataTechnology)
 })
+
+router.post('/newTechnology', createTechnology);
+
 
 export default router

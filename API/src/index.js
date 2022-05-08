@@ -1,8 +1,26 @@
 import  express  from "express";
 import config from './config'
 import router from './router';
+import mongoose from 'mongoose'
 
 let _server;
+
+const urlMongoDB = 
+'mongodb+srv://admAlvaroCodes:PorfolioAlvaroCodes123456@porfolioalvarocodes.4wwxj.mongodb.net/porfolioalvarocodes';
+
+mongoose.connect (urlMongoDB,  { 
+    useNewUrlParser: true, useUnifiedTopology: true
+},(err, res)=> { 
+   try {
+    if(err){ 
+        throw err
+    }else {
+        console.log('La conexion a la base de datos es correcta')
+    }
+   } catch (error) {
+       
+   } 
+});
 
 const server = {
     start(){
