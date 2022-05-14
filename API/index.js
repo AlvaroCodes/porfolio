@@ -7,7 +7,8 @@ const urlMongodb = 'mongodb+srv://admAlvaroCodes:PorfolioAlvaroCodes123456@porfo
 
 mongoose.connect(urlMongodb, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    // useFindAndModify: false,
 },(err, res) => {
     try {
         if(err) {
