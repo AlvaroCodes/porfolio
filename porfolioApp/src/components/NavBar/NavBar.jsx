@@ -38,7 +38,9 @@ export const NavBar = () => {
                 </div>
                 <nav className='navBar__nav'>
                     <NavLink to="/" className={({isActive}) => 'navBar__nav__link '+ ( isActive ? 'active' : '' )}>Home</NavLink>
-                    <NavLink to="/About" className={({isActive}) => 'navBar__nav__link '+ ( isActive ? 'active' : '' )}>About</NavLink>
+                    <NavLink to="/technology" className={({isActive}) => 'navBar__nav__link '+ ( isActive ? 'active' : '' )}>Technology</NavLink>
+                    <NavLink to="/projects" className={({isActive}) => 'navBar__nav__link '+ ( isActive ? 'active' : '' )}>Project</NavLink>
+                    
                     <NavLink to="/Contact" className={({isActive}) => 'navBar__nav__link '+ ( isActive ? 'active' : '' )}>Contact</NavLink>
                     <a href={Pdf} className='navBar__nav__link navBar__nav__link-cv' target = "_blank" download='curriculum'>
                         <FontAwesomeIcon className='navBar_nav_link-cv_svg' icon={faFileArrowDown} />

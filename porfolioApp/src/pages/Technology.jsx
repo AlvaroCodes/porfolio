@@ -30,12 +30,11 @@ const Technology = () => {
     }
 
     const obtenerDatos = async ()  => {
-        const response = await fetch(`http://localhost:9000/api/technology/`);
+        const response = await fetch(`http://localhost:3000/api/technology/`);
         const json = await response.json();
-        let { datos } = json;
-        setProjectJSON(datos);
+       
+        setProjectJSON(json);
         setLoading(false);
-
     }
 
    

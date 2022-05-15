@@ -36,6 +36,7 @@
 .project {
 
     margin:  10px;
+    padding: 10px;
 
     width: 90%;
 
@@ -49,6 +50,14 @@
 
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(255, 255, 255, 0);
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+
+   
+}
+
+.project:hover{
+    -webkit-box-shadow: -10px 0px 13px -7px #98AC20, 10px 0px 13px -7px #98AC20, 5px 5px 15px 5px #98AC20;
+    box-shadow: -10px 0px 13px -7px #98AC20, 10px 0px 13px -7px #98AC20, 5px 5px 15px 5px #98AC20;
+    transition: 1.5s;
 }
 
 .project-img {
@@ -104,3 +113,41 @@
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em;
    }
+
+   .tecnologiesProjects{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+       margin: 10px;
+   }
+
+   .tecnologiesProject {
+    text-decoration: none;
+    padding: 10px 50px;
+   
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 5px;   
+}
+
+.JavaScript{
+    border: 1px solid #efd948;
+    color: #efd948;
+}
+
+/* .JavaScript:hover {
+    background-color: #efd948;
+    color: white;
+} */
+
+.php{
+    border: 1px solid #838dba;
+    color: #838dba;
+}
+
+/* .php:hover{
+    background-color: #838dba;
+    color: white;
+} */
+

@@ -7,7 +7,7 @@ import './Projects.css';
 
 const Projects = () => {
     const [pointer, setPointer] = useState(3);
-    const [projectJSON, setProjectJSON] = useState({})
+    const [projectJSON, setProjectJSON] = useState([])
     const [loading, setLoading] = useState(true);
 
     const pointUp = () => {
@@ -28,21 +28,21 @@ const Projects = () => {
         if (projectJSON.length > 3) {
             return projectJSON.map((e, i) => {
                 if (i < pointer) {
-                    return <CarouselImg value={projectJSON[i]} />;
+                    return <CarouselImg key={i} value={projectJSON[i]} />;
                 }
             })
         } else {
             return projectJSON.map((e, i) => {
-                return <CarouselImg value={projectJSON[i]} />;
+                return <CarouselImg key={i} value={projectJSON[i]} />;
             })
         }
     }
 
     const obtenerDatos = async ()  => {
-        const response = await fetch(`http://localhost:9000/api/project/`);
+        const response = await fetch(`http://localhost:3000/api/project/`);
         const json = await response.json();
-        let { datos } = json;
-        setProjectJSON(datos);
+
+        setProjectJSON(json);
         setLoading(false);
 
     }
@@ -50,11 +50,6 @@ const Projects = () => {
     useEffect(() => {
         obtenerDatos();
     }, []);
-
-
-
-
-
 
 
     if (loading) {

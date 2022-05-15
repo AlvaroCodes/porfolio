@@ -17,7 +17,6 @@ const AppRouter = () => {
       <NavBar/>
       <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About/>} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Projects" element={<Projects/>} />
           <Route path="/Technology" element={<Technology/>} />

@@ -12,9 +12,6 @@ import 'animate.css';
 
 const CarouselImg = ({value}) => {
 
-    
-
-
      console.log(value);
 
     let content;
@@ -24,8 +21,16 @@ const CarouselImg = ({value}) => {
         content = <div className='project animate__animated animate__bounceIn'>
                     <h2 className='project-title'>{value.name}</h2>
                     <p className='project-subText'>{value.subText}</p>
-                    <img className='project-img' src={value.imgTechnology} alt="" />
+                    <img className='project-img' src={value.imgProject} alt={`imgen del proyecto ${value.name}`}/>
                 
+                    <div className='tecnologiesProjects'>
+                        {
+                            value.technologies.map((valueTech, index)=>{
+                                 return (<p href='#' className={'tecnologiesProject'+' '+valueTech} >{valueTech}</p>)
+                            })
+                        } 
+                    </div>
+
                     <div className='project-links'>
                         <a 
                         className='project-link' 
@@ -59,9 +64,7 @@ const CarouselImg = ({value}) => {
 
     return (
         <div className='carrousel-projects'>
-                
-                {content}   
-             
+                {content}  
         </div>
     )
 
