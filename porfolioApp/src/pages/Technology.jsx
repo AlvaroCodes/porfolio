@@ -1,81 +1,72 @@
 import React, { useEffect, useState } from 'react'
-import CarouselImg from '../components/Carousel/CarouselImg/CarouselImg';
-import technology from '../technology';
 
 
-import CarouselList from '../components/Carousel/CarouselList/CarouselList';
+import ContactCard from '../components/ContactCard/ContactCard'
+import './Technology.css'
 
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faAngleDoubleLeft, faAngleDoubleRight} from '@fortawesome/free-solid-svg-icons'
-
-import './Technology.css';
+import { faJs, faPhp, faHtml5, faCss3Alt, faReact, faNodeJs, faEnvira, faSass, faGit } from '@fortawesome/free-brands-svg-icons';
+import { faServer } from '@fortawesome/free-solid-svg-icons'
 
 const Technology = () => {
-    const [pointer, setPointer] = useState(0);
-    const [value, setValue] = useState({});
 
-    const [projectJSON, setProjectJSON] = useState([])
+    const [technology, setTechnology] = useState([])
     const [loading, setLoading] = useState(true);
 
-
-    const pointBack = () => {
-      
-        (pointer > 0)?setPointer(pointer - 1):setPointer(projectJSON.length - 1);
-        
-    }
-
-    const pointUp = () => {
-    (pointer < (projectJSON.length - 1 ))? setPointer(pointer  + 1):setPointer(0);
-    }
-
-    const obtenerDatos = async ()  => {
+    const obtenerDatos = async () => {
         const response = await fetch(`http://localhost:3000/api/technology/`);
         const json = await response.json();
-       
-        setProjectJSON(json);
+
+        console.log(json);
+
+        setTechnology(json);
         setLoading(false);
     }
 
-   
-  
-    
     useEffect(() => {
         obtenerDatos();
     }, []);
 
-    console.log(projectJSON);
-    
-   
+
+    const guiaIconos = {
+        JavaScript: faJs,
+        PHP: faPhp,
+        HTML: faHtml5,
+        CSS: faCss3Alt,
+        React: faReact,
+        NodeJS: faNodeJs,
+        MongoDB: faEnvira,
+        Sass: faSass,
+        Git: faGit,
+        SQL: faServer
+    }
+
+
 
     if (loading) {
         return (
-            <div className='projects'>
+            <div className='tecnologia'>
                 <h1>Cargando...</h1>
             </div>
         );
-    }else {
+    } else {
         return (
             <div className='tecnologia'>
-                <h1 className='tecnologia-title'>Technology</h1>
-        
-            <section className='tecnologia-carousel'>
-            
-                <FontAwesomeIcon className='tecnologia-carousel--arrow'  onClick={pointBack} icon={faAngleDoubleLeft}/>
-                        <CarouselImg value={projectJSON[pointer]} />
-                <FontAwesomeIcon className='tecnologia-carousel--arrow' onClick={pointUp} icon={faAngleDoubleRight}/>
-              
-            </section>
-               
-        
-                    <CarouselList pointer = {pointer}/>
-             
-        
-            </div>
-          )
-    }
 
- 
+                <h1 className='tecnologia-title'>Technology</h1>
+                <div className='tecnologia-cards'>
+
+
+                    {
+                       
+
+                        technology.map((element) => {
+                            return (<ContactCard nameIcon={guiaIconos[element.name]} url={`http://localhost:3001/technology/${element.name}`} />)
+                        })
+                    }
+                </div>
+            </div>
+        )
+    }
 }
 
 export default Technology

@@ -15,83 +15,26 @@
 }
 
 .tecnologia-title{
-    margin: 15px 5px 10px 5px;
+    margin: 40px 5px 10px 5px;
 }
 
-.tecnologia-carousel{
+.tecnologia-cards {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    flex-direction: row;
+    flex-wrap: wrap;
 
-.tecnologia-carousel--arrow{
-    font-size: 1.7rem;
-}
-
-.tecnologia-carousel--arrow:hover{
-    cursor: pointer;
-    color: #2C2B2B;
-}
-
-.tecnologia__list {
     width: 100%;
-    margin-top: 20px;
+    padding: 40px;
 }
 
-.tecnologia__list-elemnt {
-    margin: 0 auto;
-    width: 90%;
-    border: 1px solid white;
-
-    display: flex;
-    align-items: center;
-
-    background-color: #2C2B2B;
-}
-
-.tecnologia__list-img{
-    border-right: 1px solid white;
-    width: 80px;
-    padding: 10px;
-}
-
-.tecnologia__list-title {
-    text-decoration: none;
-    color: white;
-    margin-left: 10px;
-}
-
-.tecnologia-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex-direction: row-reverse;
-
-    margin: 20px;
-}
-
-.example-enter {
-    opacity: 0;
-    transform:translateX(-100%);
-  }
-  .example-enter-active {
-    opacity: 1;
-    transform:translateX(0);
-    transition: opacity 300ms, transform 300ms;
-  }
-  .example-exit {
-    opacity: 1;
-    transform:translateX(0);
-  }
-  .example-exit-active {
-    opacity: 0;
-    transform:translateX(-100%);
-    transition: opacity 300ms, transform 300ms;
-  }
-
-
-.tecnologia-header--logo {
-    width: 70px;
-    margin-right: 10px;
+@media only screen and (min-width: 1020px) {
+    .tecnologia-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }

@@ -1,12 +1,13 @@
 import React from 'react'
-import technology from '../../../technology'
+import './LisTechnology.css';
+import 'animate.css';
 
-const CarouselList = ({pointer = 0}) => {
+const ListTechnology = ({certifications}) => {
 
   return (
-    <div className='tecnologia__list'>
+    <div className='tecnologia__list  animate__animated animate__bounceIn'>
         {
-        technology[pointer].certifications.map( (e, i) => {
+        certifications.map((e, i) => {
             return (
                
                 <div key={i} className='tecnologia__list-elemnt'>
@@ -20,4 +21,4 @@ const CarouselList = ({pointer = 0}) => {
   )
 }
 
-export default CarouselList
+export default ListTechnology

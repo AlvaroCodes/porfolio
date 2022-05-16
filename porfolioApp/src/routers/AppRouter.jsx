@@ -1,7 +1,8 @@
 import React from 'react'
 import {BrowserRouter, Routes,Route,} from "react-router-dom";
+import { CardTechnology } from '../components/CardTechnology/CardTechnology';
 import { NavBar } from '../components/NavBar/NavBar';
-import { About } from '../pages/About/About';
+
 
 import Contact from '../pages/Contact';
 
@@ -20,6 +21,7 @@ const AppRouter = () => {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Projects" element={<Projects/>} />
           <Route path="/Technology" element={<Technology/>} />
+          <Route path="/Technology/:idTech" element={<CardTechnology/>} />
       </Routes>
       </BrowserRouter>
     </div>

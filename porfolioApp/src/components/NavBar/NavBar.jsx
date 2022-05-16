@@ -20,11 +20,13 @@ export const NavBar = () => {
         setDisplayNavBar(!displayNavBar);
     }
 
+ 
 
-    if (displayNavBar){
+
+    if (displayNavBar || window.screen.width >= 768){
 
         return (
-            <div className='navBar'>
+            <div className= {( window.screen.width < 768) ? 'navBar' : 'navBar navBar-window '} >
         
                 <div className='navBar__primary'>
 
@@ -34,9 +36,12 @@ export const NavBar = () => {
                     </h1>
               
         
-                    <FontAwesomeIcon className='navBar__burger' onClick={ displayNav} icon={faBars} />
+                    {
+                        ( window.screen.width < 768) ? <FontAwesomeIcon className='navBar__burger' onClick={ displayNav} icon={faBars} /> : null
+                    }
+                   
                 </div>
-                <nav className='navBar__nav'>
+                <nav className={ ( window.screen.width < 768) ? 'navBar__nav' : 'navBar__nav-window'}>
                     <NavLink to="/" className={({isActive}) => 'navBar__nav__link '+ ( isActive ? 'active' : '' )}>Home</NavLink>
                     <NavLink to="/technology" className={({isActive}) => 'navBar__nav__link '+ ( isActive ? 'active' : '' )}>Technology</NavLink>
                     <NavLink to="/projects" className={({isActive}) => 'navBar__nav__link '+ ( isActive ? 'active' : '' )}>Project</NavLink>

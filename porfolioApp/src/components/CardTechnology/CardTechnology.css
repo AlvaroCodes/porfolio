@@ -1,0 +1,42 @@
+.technologyCard {
+    width: 700px;
+    max-width: 90%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  
+   margin: 30px;
+}
+
+.tecnologia-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row-reverse;
+
+    margin: 20px;
+}
+
+.tecnologia-header--logo {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.tecnologia {
+    height: 100vh;
+    width: 100%;
+    background-color: #1A1919;
+
+    font-family: 'Roboto', sans-serif;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding-bottom: 20px;
+}

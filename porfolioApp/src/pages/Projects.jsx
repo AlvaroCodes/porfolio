@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import CarouselImg from '../components/Carousel/CarouselImg/CarouselImg';
+import CardProjects from '../components/CardProjects/CardProjects';
 
 
 
@@ -28,12 +28,12 @@ const Projects = () => {
         if (projectJSON.length > 3) {
             return projectJSON.map((e, i) => {
                 if (i < pointer) {
-                    return <CarouselImg key={i} value={projectJSON[i]} />;
+                    return <CardProjects key={i} value={projectJSON[i]} />;
                 }
             })
         } else {
             return projectJSON.map((e, i) => {
-                return <CarouselImg key={i} value={projectJSON[i]} />;
+                return <CardProjects key={i} value={projectJSON[i]} />;
             })
         }
     }

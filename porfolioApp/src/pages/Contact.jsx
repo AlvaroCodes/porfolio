@@ -3,6 +3,7 @@ import ContactCard from '../components/ContactCard/ContactCard'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import {faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
+
 import './Contact.css'
 
 const Contact = () => {
