@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import CardProjects from '../components/CardProjects/CardProjects';
+import { Filter } from '../components/Filter/Filter';
 
 
 
@@ -7,8 +8,9 @@ import './Projects.css';
 
 const Projects = () => {
     const [pointer, setPointer] = useState(3);
-    const [projectJSON, setProjectJSON] = useState([])
+    const [projectJSON, setProjectJSON] = useState([]);
     const [loading, setLoading] = useState(true);
+    
 
     const pointUp = () => {
         if (pointer < projectJSON.length) {
@@ -28,12 +30,12 @@ const Projects = () => {
         if (projectJSON.length > 3) {
             return projectJSON.map((e, i) => {
                 if (i < pointer) {
-                    return <CardProjects key={i} value={projectJSON[i]} />;
+                    return <CardProjects key={i + 1} value={projectJSON[i]} />;
                 }
             })
         } else {
             return projectJSON.map((e, i) => {
-                return <CardProjects key={i} value={projectJSON[i]} />;
+                return <CardProjects key={i + 1} value={projectJSON[i]} />;
             })
         }
     }
@@ -63,7 +65,9 @@ const Projects = () => {
             return (
                 <div className='projects'>
                     <h1 className='projects-title'>Projects</h1>
-    
+
+                    <Filter projectJSON={projectJSON} setProjectJSON={setProjectJSON} setPointer={setPointer} />
+
                     <div className='carrousel-projects'>
                         {mostrarProjects()}
                     </div>
@@ -75,6 +79,8 @@ const Projects = () => {
                 <div className='projects'>
                     <h1 className='projects-title'>Projects</h1>
     
+                    <Filter projectJSON={projectJSON} setProjectJSON={setProjectJSON} setPointer={setPointer} />
+
                     <div className='carrousel-projects'>
                         {mostrarProjects()}
                     </div>

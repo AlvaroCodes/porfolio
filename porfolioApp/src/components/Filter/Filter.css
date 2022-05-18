@@ -1,0 +1,20 @@
+.iconFilter{
+    width: 30px;
+    color:  #f1b100;
+    font-size: 30px;
+    margin-right: 10px;
+  
+}
+
+.iconFilterContainer {
+    display: flex;
+    align-items: center;
+
+    margin: 40px 0 -20px 0;
+    padding: 10px 20px;
+    color:  #f1b100;
+}
+
+.iconFilter, .iconFilterContainer:hover {
+    cursor: pointer;
+}

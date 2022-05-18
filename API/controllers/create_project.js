@@ -5,6 +5,8 @@ async function createProject(req,res) {
    const params = req.body;
 
    project.name = params.name;
+   project.author = params.author;
+   project.authorUrlImg = params.authorUrlImg;
    project.imgProject = params.imgProject;
    project.subText = params.subText;
    project.urlGit = params.urlGit;

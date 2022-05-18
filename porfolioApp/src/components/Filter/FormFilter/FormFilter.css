@@ -1,0 +1,44 @@
+.formFilter{
+    margin:  10px;
+    padding: 10px;
+
+    max-width: 90%;
+    width: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+
+
+    background-color: #2C2B2B;
+    border-radius: 5px;
+
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+}
+
+.formFilter-element {
+    margin: 15px;
+}
+.formFilter-elements{
+    display: flex;
+    align-items: center;
+}
+
+.filterContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+}
+
+.filterContainer-title {
+
+    margin: 8px;
+    color:  #f1b100;
+}
