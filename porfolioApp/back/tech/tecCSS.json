@@ -1,0 +1,17 @@
+{
+    "name": "CSS",
+    "imgTechnology": "https://lenguajecss.com/assets/logo.svg",
+    "certifications": [
+        {
+            "nameCertifications": "Curso de HTML5 y CSS3",
+			"url": "https://openwebinars.net/cert/WqXAp",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+        },
+        {
+            "nameCertifications": "Curso de HTML5, CSS3 y JavaScript",
+			"url": "https://drive.google.com/file/d/1taIqhu-FNgoR2xyOy4SZw7Ec6P7VlclA/view?usp=sharing",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+        }
+    ]
+
+}

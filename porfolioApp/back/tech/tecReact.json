@@ -1,0 +1,38 @@
+{
+    "name": "React",
+    "imgTechnology": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
+    "certifications": [
+        {
+            "nameCertifications": "Curso de React JS ( Clases )",
+			"url": "https://drive.google.com/file/d/1LLOj1jecfaBEG50nozfzZ5ZYkiDD-gYe/view?usp=sharing",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+        },
+        {
+            "nameCertifications": "Curso de React avanzado",
+			"url": "https://openwebinars.net/cert/4NrDN",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+        },
+        {
+            "nameCertifications": "Curso de React intermedio",
+			"url": "https://openwebinars.net/cert/w0OBz",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+        },
+        {
+            "nameCertifications": "Organízate con React",
+			"url": "https://openwebinars.net/cert/8Nwle",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+        },
+        {
+			"nameCertifications": "React JS Desde Cero! Hooks, Redux, Context, Firebase y más!",
+			"url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-64d5c644-b635-4f33-9c14-64c49969d2dd.pdf",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1415324297304977411/p9kTpGac_400x400.png"
+		},
+        {
+			"nameCertifications": " React: De cero a experto ( Hooks y MERN )",
+			"url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-0b7bb254-97d5-403b-880e-bbc713e9c092.pdf",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1415324297304977411/p9kTpGac_400x400.png"
+		}
+    ]
+    
+
+}

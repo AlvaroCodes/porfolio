@@ -1,0 +1,21 @@
+{
+    "name": "NodeJS",
+    "imgTechnology": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+    "certifications": [
+        {
+            "nameCertifications": "Curso Crea un API Rest con Node JS y Express: Endpoint con Rest",
+			"url": "https://openwebinars.net/cert/PDBQ1",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+        },
+        {
+            "nameCertifications": "Curso Crea un API Rest con Node JS y Express: JWT y ficheros",
+			"url": "https://openwebinars.net/cert/MDX5r",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+        },
+        {
+            "nameCertifications": "Curso de Node.js y Express",
+			"url": "https://openwebinars.net/cert/0L3Y5",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+        }
+    ]
+}

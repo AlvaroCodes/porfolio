@@ -83,11 +83,9 @@ useEffect(() => {
           )
     }else {
         return (
-            <div>
+            <div className='filterContainerForm'>
 
-                <div>
-
-                </div>
+               
                 <FontAwesomeIcon  className='iconFilter' onClick={reverse} icon={faFilter} />
                 <p onClick={reverse} >Filtrar</p>
 

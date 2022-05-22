@@ -27,6 +27,7 @@
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   flex-wrap: wrap;
   
    margin: 30px;
 }
@@ -73,6 +74,8 @@
 
 .project-subText{
     margin-bottom: 15px;
+    width: 80%;
+    line-height: 27px;
 } 
 
 .project-links{
@@ -125,7 +128,7 @@
 
 .project-author-img {
     margin: 0 auto;
-    width: 25px; 
+    width: 20px; 
 }
 
 .btn {
@@ -155,9 +158,12 @@
        display: flex;
        justify-content: center;
        align-items: center;
-
+       flex-wrap: wrap;
        margin: 10px;
    }
+
+   
+
 
    .tecnologiesProject {
     text-decoration: none;
@@ -168,23 +174,42 @@
     border-radius: 5px;   
 }
 
+@media only screen and (max-width: 488px) {
+    .tecnologiesProject {
+        padding: 5px 36px;
+        font-size: 0.8rem;
+    }
+   }
+   @media only screen and (max-width: 362px) {
+    .tecnologiesProject {
+        padding: 5px 26px;
+        font-size: 0.8rem;
+    }
+   }
+
+   
 .JavaScript{
     border: 1px solid #efd948;
     color: #efd948;
 }
-
-/* .JavaScript:hover {
-    background-color: #efd948;
-    color: white;
-} */
 
 .php{
     border: 1px solid #838dba;
     color: #838dba;
 }
 
-/* .php:hover{
-    background-color: #838dba;
-    color: white;
-} */
+.Jquery{
+    border: 1px solid #efd948;
+    color: #efd948;
+}
+
+.HTML5{
+    border: 1px solid #e55f34;
+    color: #e55f34;
+}
+
+.CSS3{
+    border: 1px solid #3da0d5;
+    color: #3da0d5;
+}
 

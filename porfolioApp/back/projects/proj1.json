@@ -1,0 +1,10 @@
+{
+    "name": "SimplePorfolio",
+    "author": "Udemy",
+    "authorUrlImg": "https://pbs.twimg.com/profile_images/1415324297304977411/p9kTpGac_400x400.png",
+    "imgProject": "https://raw.githubusercontent.com/AlvaroCodes/SimplePorfolio/main/CapturaPantalla.png",
+    "subText": "Curso de Udemy: Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL",
+    "urlGit": "https://github.com/AlvaroCodes/SimplePorfolio",
+    "urlWeb": "/",
+    "technologies": ["HTML5", "CSS3"]
+}

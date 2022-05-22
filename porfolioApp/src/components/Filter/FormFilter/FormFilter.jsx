@@ -90,9 +90,11 @@ const filterJSON = () => {
     return (
         <form className='formFilter'>
 
+<h4 className='filterContainer-title'>Author Project</h4>
+
         <div className='filterContainer'>
 
-        <h4 className='filterContainer-title'>Author Project</h4>
+       
         {
                 author.map((element, index) => {
                     return (
@@ -106,8 +108,10 @@ const filterJSON = () => {
         </div>
            
 
+        <h4 className='filterContainer-title'>Technology</h4>
+        
             <div className='filterContainer'>
-                    <h4 className='filterContainer-title'>Technology</h4>
+                  
 
                     {
                 techs.map((element, index) => {

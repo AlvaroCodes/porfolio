@@ -4,8 +4,8 @@ import React, { useEffect, useState } from 'react'
 import ContactCard from '../components/ContactCard/ContactCard'
 import './Technology.css'
 
-import { faJs, faPhp, faHtml5, faCss3Alt, faReact, faNodeJs, faEnvira, faSass, faGit } from '@fortawesome/free-brands-svg-icons';
-import { faServer } from '@fortawesome/free-solid-svg-icons'
+import { faJs, faPhp, faHtml5, faCss3Alt, faReact, faNodeJs, faEnvira, faSass, faGit, faDocker} from '@fortawesome/free-brands-svg-icons';
+import { faServer, faRocket} from '@fortawesome/free-solid-svg-icons'
 
 const Technology = () => {
 
@@ -37,7 +37,9 @@ const Technology = () => {
         MongoDB: faEnvira,
         Sass: faSass,
         Git: faGit,
-        SQL: faServer
+        SQL: faServer,
+        Docker: faDocker,
+        Others: faRocket 
     }
 
 

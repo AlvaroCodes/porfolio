@@ -1,0 +1,22 @@
+{
+    "name": "Other",
+    "imgTechnology": "https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png?20091205084734",
+    "certifications": [
+        {
+            "nameCertifications": "Curso de Clean Code",
+			"url": "https://drive.google.com/file/d/1lXAwz5AWp_8vByN_DmADa2yCjjkFJ5Gg/view?usp=sharing",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1415324297304977411/p9kTpGac_400x400.png"
+        },
+        {
+            "nameCertifications": "Curso de Jenkins para principiantes",
+			"url": "https://drive.google.com/file/d/1-xDT6wX78pFkUV1yuKdGncDydPWIQil9/view?usp=sharing",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1415324297304977411/p9kTpGac_400x400.png"
+        },
+        {
+            "nameCertifications": "Google Cloud Platform: IFCT169PO - GCP FUNDAMENTALS: CORE INFRASTRUCTURE",
+			"url": "https://drive.google.com/file/d/1ybkYWAPErxY0QdlIJBJe0Wa4Qy1DjUIn/view?usp=sharing",
+			"iconCompany": "https://media-exp1.licdn.com/dms/image/C4E0BAQFobod5lpj99Q/company-logo_200_200/0/1519875796505?e=1661385600&v=beta&t=4S_YqVVXxtdwcdDZ7Htwn18S455nP9rlGXdPczoiB4g"
+        }
+    ]
+
+}

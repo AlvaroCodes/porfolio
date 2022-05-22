@@ -30,7 +30,7 @@ async function createProject(req,res) {
 async function getProject(req, res) {
     try {
        
-        const projects = await proj.find();
+        const projects = await proj.find().sort({ created_at: -1 });
         if(!projects){
          res.status(400).send({msg: "Error al obtener los projects"});
         }else {

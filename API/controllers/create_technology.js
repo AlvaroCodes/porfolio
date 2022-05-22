@@ -28,9 +28,6 @@ async function getTechnology(req, res) {
        // Para ordenar, por fecha por ejemplo ... 
        //  const tech = await tec.find().sort({ created_at: -1 });
 
-       // Para poner conficiones...
-       // const tech = await tec.find({completed: false});
-
        const tech = await tec.find();
        if(!tech){
         res.status(400).send({msg: "Error al obtener las technologies"});

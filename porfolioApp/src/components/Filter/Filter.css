@@ -18,3 +18,8 @@
 .iconFilter, .iconFilterContainer:hover {
     cursor: pointer;
 }
+
+.filterContainerForm {
+    width: 80%;
+    margin: 0 auto;
+}

@@ -10,7 +10,12 @@ const ProjSchema = Schema({
    subText: String,
    urlGit: String,
    urlWeb: String,
-   technologies:  [String]
+   technologies:  [String],
+   created_at: {
+      type: Date,
+      required: true,
+      default: Date.now
+   }
 });
 
 module.exports = mongoose.model("project", ProjSchema);

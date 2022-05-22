@@ -1,0 +1,72 @@
+{
+	"name": "JavaScript",
+	"imgTechnology": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/245px-Unofficial_JavaScript_logo_2.svg.png",
+	"certifications": [
+		{
+			"nameCertifications": "Fundamentos del Service Workers",
+			"url": "https://openwebinars.net/certificado/GolYGegV",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+		}, 
+		{
+			"nameCertifications": "Curso de TypeScript",
+			"url": "https://openwebinars.net/cert/N0nPk",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+		},
+		{
+			"nameCertifications": "Curso de jQuery",
+			"url": "https://openwebinars.net/cert/w0rAz",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+		},
+		{
+			"nameCertifications": "Curso de ECMAScript 6",
+			"url": "https://openwebinars.net/cert/JDNWl",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+		},
+		{
+			"nameCertifications": "Curso de JavaScript Profesional",
+			"url": "https://openwebinars.net/certificado/axWqGppV",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+		},
+		{
+			"nameCertifications": "Curso de JavaScript avanzado",
+			"url": "https://openwebinars.net/cert/RNM5a",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+		},
+		{
+			"nameCertifications": "JavaScript Prototypes",
+			"url": "https://openwebinars.net/cert/Oa02K",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+		},
+		{
+			"nameCertifications": "Programación asíncrona con promises en JavaScript",
+			"url": "https://openwebinars.net/cert/Xk21k",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+		},
+		{
+			"nameCertifications": "Programador JavaScript Profesional",
+			"url": "https://openwebinars.net/cert/OwwQ2",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+		},
+		{
+			"nameCertifications": "Curso de HTML5, CSS3 y JavaScript",
+			"url": "https://drive.google.com/file/d/1taIqhu-FNgoR2xyOy4SZw7Ec6P7VlclA/view?usp=sharing",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+		},
+		{
+			"nameCertifications": "Curso de JavaScript Intermedio",
+			"url": "https://drive.google.com/file/d/1U6zMOlSOliOUC84zprozTTff_guaAHlF/view?usp=sharing",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+		},
+		{
+			"nameCertifications": "Curso de JavaScript para Principiantes",
+			"url": "https://drive.google.com/file/d/1AuMxQQ1beUwRXJwrj9XmALf-LgO_ATH6/view?usp=sharing",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+		},
+		{
+			"nameCertifications": " JavaScript Moderno: Guía para dominar el lenguaje",
+			"url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-bb22fe00-f9d0-424b-97b8-ba1f3dc4bfa3.pdf",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1415324297304977411/p9kTpGac_400x400.png"
+		}
+	]
+	
+}

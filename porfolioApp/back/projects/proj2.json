@@ -1,0 +1,10 @@
+{
+    "name": "Fitness-Hub",
+    "author": "AlvaroCodes",
+    "authorUrlImg": "https://cdn2.f-cdn.com/contestentries/1373079/15782079/5b4e4bbf3a834_thumb900.jpg",
+    "imgProject": "https://raw.githubusercontent.com/AlvaroCodes/Fitness-Hub/main/UI/home.PNG",
+    "subText": "Este proyecto se realizó en la asinatura de Desarrollo web entorno Cliente.",
+    "urlGit": "https://github.com/AlvaroCodes/Fitness-Hub",
+    "urlWeb": "/",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "php"]
+}

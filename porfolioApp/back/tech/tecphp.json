@@ -1,0 +1,12 @@
+{
+    "name": "PHP",
+    "imgTechnology": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png",
+    "certifications": [
+        {
+            "nameCertifications": "PHP 8 y MYSQL: El Curso Completo, Práctico y Desde Cero",
+			"url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-05344162-b5b5-4777-9db7-0b1aad3fe4f3.pdf",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1415324297304977411/p9kTpGac_400x400.png"
+        }
+    ]
+
+}

@@ -1,9 +1,10 @@
 .formFilter{
-    margin:  10px;
+    margin:  0 auto;
     padding: 10px;
 
-    max-width: 90%;
-    width: 500px;
+    width: 67%;
+   
+   
 
     display: flex;
     justify-content: center;
@@ -21,11 +22,16 @@
 }
 
 .formFilter-element {
-    margin: 15px;
+    margin: 10px;
+
+   
 }
 .formFilter-elements{
     display: flex;
     align-items: center;
+
+    margin: 0 10px;
+   
 }
 
 .filterContainer{
@@ -34,7 +40,8 @@
     align-items: center;
     flex-wrap: wrap;
 
-    flex-direction: column;
+  width: 87%;
+  margin: 0 auto;
 }
 
 .filterContainer-title {

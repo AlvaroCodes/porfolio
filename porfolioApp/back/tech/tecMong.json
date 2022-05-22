@@ -1,0 +1,17 @@
+{
+    "name": "MongoDB",
+    "imgTechnology": "https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png",
+    "certifications": [
+        {
+            "nameCertifications": "Curso de MongoDB: Creación y gestión de bases de datos NoSQL",
+			"url": "https://openwebinars.net/cert/N0M3N",
+			"iconCompany": "https://pbs.twimg.com/profile_images/1182608520337903616/zohNLXeL_400x400.png"
+        },
+        {
+            "nameCertifications": "M001: MongoDB Basics",
+			"url": "https://university.mongodb.com/course_completion/d987363c-7527-4178-98da-505bba31d910/printable?format=img",
+			"iconCompany": "https://cdn.my-mooc.com/media/cache/conceptor_160x160/conceptor/logo/b37f011476d35f5b34364a7fc5377c528b081cb4.png"
+        }
+    ]
+
+}
