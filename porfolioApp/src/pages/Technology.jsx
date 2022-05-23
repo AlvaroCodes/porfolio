@@ -56,7 +56,7 @@ const Technology = () => {
 
                     {
                         technology.map((element, i) => {
-                            return (<ContactCard key={i} nameIcon={guiaIconos[element.name]} url={`https://alvarocodes.github.io/porfolio/technology/${element.name}`} />)
+                            return (<ContactCard key={i} nameIcon={guiaIconos[element.name]} url={`https://famous-conkies-6f9ce6.netlify.app/technology/${element.name}`} />)
                         })
                     }
                 </div>
