@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// No es imgTechnology es imgProject
 const ProjSchema = Schema({
    name: String,
    author: String,
