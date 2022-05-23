@@ -10,8 +10,6 @@ export const CardTechnology = () => {
 
     const { idTech } = useParams();
 
-  
-
 
     const [tech, setTech] = useState({});
     const [loading, setLoading] = useState(true);
