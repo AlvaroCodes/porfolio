@@ -17,7 +17,7 @@ export const Filter = ({setProjectJSON, setPointer}) => {
 
 
     const obtenerDatos = async ()  => {
-      const response = await fetch(`http://localhost:3000/api/project/`);
+      const response = await fetch(`https://porfolioalvarocodes.herokuapp.com/api/project`);
       const json = await response.json();
 
       setProjectsJSON(json);

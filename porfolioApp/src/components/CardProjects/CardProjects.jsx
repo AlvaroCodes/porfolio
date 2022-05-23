@@ -1,5 +1,4 @@
 import React from 'react'
-import './CardProjects.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
@@ -21,7 +20,7 @@ const CardProjects = ({value}) => {
                     <div className='tecnologiesProjects'>
                         {
                             technologies.map((valueTech, index)=>{
-                                 return (<p href='#' className={'tecnologiesProject'+' '+valueTech} >{valueTech}</p>)
+                                 return (<p href='#' key={index * 101} className={'tecnologiesProject'+' '+valueTech} >{valueTech}</p>)
                             })
                         } 
                     </div>

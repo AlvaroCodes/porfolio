@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 
-
 import ContactCard from '../components/ContactCard/ContactCard'
 import './Technology.css'
 
@@ -13,11 +12,8 @@ const Technology = () => {
     const [loading, setLoading] = useState(true);
 
     const obtenerDatos = async () => {
-        const response = await fetch(`http://localhost:3000/api/technology/`);
+        const response = await fetch(`https://porfolioalvarocodes.herokuapp.com/api/technology`);
         const json = await response.json();
-
-        console.log(json);
-
         setTechnology(json);
         setLoading(false);
     }
@@ -59,10 +55,8 @@ const Technology = () => {
 
 
                     {
-                       
-
-                        technology.map((element) => {
-                            return (<ContactCard nameIcon={guiaIconos[element.name]} url={`http://localhost:3001/technology/${element.name}`} />)
+                        technology.map((element, i) => {
+                            return (<ContactCard key={i} nameIcon={guiaIconos[element.name]} url={`http://localhost:3000/technology/${element.name}`} />)
                         })
                     }
                 </div>

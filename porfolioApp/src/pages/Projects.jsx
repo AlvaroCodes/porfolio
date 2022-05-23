@@ -26,22 +26,21 @@ const Projects = () => {
     }
 
     const mostrarProjects = () => {
-        console.log(projectJSON);
         if (projectJSON.length > 3) {
             return projectJSON.map((e, i) => {
                 if (i < pointer) {
-                    return <CardProjects key={i + 1} value={projectJSON[i]} />;
+                    return <CardProjects key={i * 3} value={projectJSON[i]} />;
                 }
             })
         } else {
             return projectJSON.map((e, i) => {
-                return <CardProjects key={i + 1} value={projectJSON[i]} />;
+                return <CardProjects key={i * 2} value={projectJSON[i]} />;
             })
         }
     }
 
     const obtenerDatos = async ()  => {
-        const response = await fetch(`http://localhost:3000/api/project/`);
+        const response = await fetch(`https://porfolioalvarocodes.herokuapp.com/api/project`);
         const json = await response.json();
 
         setProjectJSON(json);

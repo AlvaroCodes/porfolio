@@ -15,13 +15,11 @@ export const CardTechnology = () => {
     const [loading, setLoading] = useState(true);
 
     const obtenerDatos = async () => {
-        const response = await fetch(`http://localhost:3000/api/technology/`);
+        const response = await fetch(`https://porfolioalvarocodes.herokuapp.com/api/technology`);
         const json = await response.json();
 
-        setTech(json.filter(obj => obj.name == idTech)[0])
+        setTech(json.filter(obj => obj.name === idTech)[0])
 
-        console.log(tech);
-        
         setLoading(false);
     }
 
