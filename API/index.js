@@ -4,7 +4,7 @@ const app = require("./app");
 
 const port = process.env.PORT || 3977;
 
-const urlMongodb = 'mongodb+srv://admAlvaroCodes:PorfolioAlvaroCodes123456@porfolioalvarocodes.4wwxj.mongodb.net/porfolioalvarocodes';
+const urlMongodb = '---';
 
 
 mongoose.connect(urlMongodb, {
