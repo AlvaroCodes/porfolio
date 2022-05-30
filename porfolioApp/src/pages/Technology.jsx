@@ -56,7 +56,7 @@ const Technology = () => {
 
                     {
                         technology.map((element, i) => {
-                            return (<ContactCard key={i} nameIcon={guiaIconos[element.name]} url={`https://alvarocodes.github.io/technology/${element.name}`} />)
+                            return (<ContactCard key={i} nameIcon={guiaIconos[element.name]} url={`${process.env.PUBLIC_URL+'technology/'+ element.name}`} />)
                         })
                     }
                 </div>
