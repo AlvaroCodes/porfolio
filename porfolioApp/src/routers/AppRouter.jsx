@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Routes,Route, HashRouter,} from "react-router-dom";
+import {BrowserRouter, Routes,Route} from "react-router-dom";
 import { CardTechnology } from '../components/CardTechnology/CardTechnology';
 import { NavBar } from '../components/NavBar/NavBar';
 
@@ -15,7 +15,7 @@ import Technology from '../pages/Technology';
 const AppRouter = () => {
   return (
     <div>
-      <HashRouter>
+      <BrowserRouter>
       <NavBar/>
       <Routes>
           <Route path="/" element={<Home />} />
@@ -25,7 +25,7 @@ const AppRouter = () => {
           <Route path="/Technology/:idTech" element={<CardTechnology/>} />
           <Route path='*' element={<Error404/>} />
       </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   )
 }
