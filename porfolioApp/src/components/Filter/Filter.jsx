@@ -8,7 +8,6 @@ import FormFilter from './FormFilter/FormFilter';
 
 export const Filter = ({setProjectJSON, setPointer}) => {
 
-  
     const [active, setActive] = useState(false);
     const [authors, setAuthors] = useState([]);
     const [technologiesState, setTechnologiesState] = useState([]);
@@ -19,10 +18,7 @@ export const Filter = ({setProjectJSON, setPointer}) => {
     const obtenerDatos = async ()  => {
       const response = await fetch(`https://porfolioalvarocodes.herokuapp.com/api/project`);
       const json = await response.json();
-
       setProjectsJSON(json);
-     
-
   }
 
   useEffect(() => {
@@ -35,41 +31,28 @@ export const Filter = ({setProjectJSON, setPointer}) => {
       let authorsArr = [];
 
         for (const property in projectsJSON) {
-
           projectsJSON[property].technologies.forEach((element)=> {
             if(!techsArr.includes(element)){   
               techsArr = [...techsArr, element];
             }
           });
-
-
-
-      
              if(!authorsArr.includes(projectsJSON[property].author)){
               authorsArr = [...authorsArr,  projectsJSON[property].author];     
              }   
           }     
-
           setTechnologiesState(techsArr);
           setAuthors(authorsArr);
-          
-          
 }
 
 useEffect(() => {
-
   if(jsonProjectChild[0] != undefined){
-    console.log('Hola Feo')
     setProjectJSON(jsonProjectChild);
     setPointer(3);
   }else {
     filterJSON();
   }
-
 }, [jsonProjectChild])
 
-
-  
     const reverse = () => {
         setActive(!active);
     }
@@ -84,15 +67,10 @@ useEffect(() => {
     }else {
         return (
             <div className='filterContainerForm'>
-
-               
                 <FontAwesomeIcon  className='iconFilter' onClick={reverse} icon={faFilter} />
                 <p onClick={reverse} >Filtrar</p>
-
-
                 <FormFilter setJsonProjectChild={setJsonProjectChild} author={authors}  techs={technologiesState}/>
             </div>
           )
     }
- 
 }
